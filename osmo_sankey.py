@@ -14,7 +14,8 @@ import time
 import plotly.graph_objects as go
 import random
 import plotly.io as pio
-from streamlit_autorefresh import st_autorefresh
+import streamlit_autorefresh
+#from streamlit_autorefresh import st_autorefresh
 
 try:
 	st.set_page_config(
@@ -236,4 +237,4 @@ try:
 		st.plotly_chart(fig, use_container_width=True) 
 
 except: 
-   count = st_autorefresh(interval=5, limit=100, key="fizzbuzzcounter")
+   st_autorefresh(interval=10, key="dataframerefresh")
