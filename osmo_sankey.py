@@ -237,4 +237,4 @@ try:
 		st.plotly_chart(fig, use_container_width=True) 
 
 except: 
-   st_autorefresh(interval=10, key="dataframerefresh")
+   st_autorefresh(interval=10)
